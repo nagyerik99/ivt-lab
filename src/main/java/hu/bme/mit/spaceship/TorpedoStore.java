@@ -1,5 +1,6 @@
 package hu.bme.mit.spaceship;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 /**
@@ -14,7 +15,7 @@ public class TorpedoStore {
 
   private int torpedoCount = 0;
 
-  static Random generator = new Random();
+  static SecureRandom generator = new SecureRandom();
 
   public TorpedoStore(int numberOfTorpedos){
     this.torpedoCount = numberOfTorpedos;
